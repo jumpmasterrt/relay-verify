@@ -1,0 +1,22 @@
+{
+  "name": "relay-verify",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "register": "node scripts/register-commands.js",
+    "test": "node test/rules.test.mjs",
+    "idme:fake": "node scripts/fake-idme-server.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2"
+  },
+  "description": "Discord role assignment driven by ID.me military verification."
+}
